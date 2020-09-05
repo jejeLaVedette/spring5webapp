@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<p>toto l'asticot </p>
+
+
+<body>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Tile</th>
+        <th>Publisher</th>
+    </tr>
+    <tr th:each="book : ${books}">
+        <th th:text="${book.id}"> </th>
+        <th th:text="${book.title}"> </th>
+        <th th:text="${book.publisher.name}"> </th>
+    </tr>
+</table>
+</body>
+</html>
